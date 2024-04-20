@@ -34,7 +34,6 @@ python train.py --dataset CoNLL03-English-synthetic
 ```
 Here, we use *CoNLL03-English-synthetic*, which is a special version containing both the original version of the well-known [CoNLL03-English](https://huggingface.co/datasets/conll2003) dataset and its lower-cased version, to train the model. This helps improve the robustness of the custom NER model in predicting person names in transcript data, where names could be incorrectly lowercased by an ASR system. The trained model will be stored at `logs/CoNLL03-English-synthetic/best-model.mdl`. A trained custom NER model can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing).
 
-
 ## Speaker Identification
 For speaker identification, we developed two main models:
 - Individual Model: given an inidividual person name, the model tries to decide if the name belongs to any speaker around.
