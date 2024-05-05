@@ -1,4 +1,4 @@
-# speaker-identification
+# Speaker Identification
 
 This repository contains data and code for the project of speaker identification. End-to-end speaker identification is done in two stages:
 - Person name recognition: given a meeting transcript, find spans for person names for each sentence in the transcript.
@@ -56,3 +56,8 @@ In this command:
     - [REQUIRED] `--model_type [joint|individual]` specifies what type of models that we use for training. `joint` means the Joint Model while `individual` means the Individual Model.
 
 Trained models can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing).
+
+## License
+
+The code and model are licensed under the [Adobe Research License](./LICENSE.md). The license prohibits commercial use and allows non-commercial research use. 
+
