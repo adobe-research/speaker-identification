@@ -32,7 +32,7 @@ To train the custom NER model, please run the command:
 ```
 python train.py --dataset CoNLL03-English-synthetic
 ```
-Here, we use *CoNLL03-English-synthetic*, which is a special version containing both the original version of the well-known [CoNLL03-English](https://huggingface.co/datasets/conll2003) dataset and its lower-cased version, to train the model. This helps improve the robustness of the custom NER model in predicting person names in transcript data, where names could be incorrectly lowercased by an ASR system. The trained model will be stored at `logs/CoNLL03-English-synthetic/best-model.mdl`. A trained custom NER model can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing).
+Here, we use *CoNLL03-English-synthetic*, which is a special version containing both the original version of the well-known [CoNLL03-English](https://huggingface.co/datasets/conll2003) dataset and its lower-cased version, to train the model. This helps improve the robustness of the custom NER model in predicting person names in transcript data, where names could be incorrectly lowercased by an ASR system. The trained model will be stored at `logs/CoNLL03-English-synthetic/best-model.mdl`. A trained custom NER model can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing) ([mirror](https://archive.org/download/speaker-identification)).
 
 ## Speaker Identification
 For speaker identification, we developed two main models:
@@ -45,7 +45,7 @@ We use the trained NER model to make predictions on [Mediasum Corpus](https://gi
 ```
 python util.py
 ```
-The preprocessed dataset will be stored at `datasets/mediasum`. The preprocessed dataset can be downloaded at: [Google Drive link](https://drive.google.com/file/d/1yfbFL2NtKcVFgslGGgGzh8jjRUbl5Afz/view?usp=sharing).
+The preprocessed dataset will be stored at `datasets/mediasum`. The preprocessed dataset can be downloaded at: [Google Drive link](https://drive.google.com/file/d/1yfbFL2NtKcVFgslGGgGzh8jjRUbl5Afz/view?usp=sharing) ([mirror](https://archive.org/download/speaker-identification)).
 
 ### Training
 To train the models, please use the following command:
@@ -55,7 +55,7 @@ python train.py --dataset mediasum --model_type [joint|individual]
 In this command:
     - [REQUIRED] `--model_type [joint|individual]` specifies what type of models that we use for training. `joint` means the Joint Model while `individual` means the Individual Model.
 
-Trained models can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing).
+Trained models can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing) ([mirror](https://archive.org/download/speaker-identification)).
 
 ## License
 
