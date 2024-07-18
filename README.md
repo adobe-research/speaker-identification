@@ -1,6 +1,8 @@
 # Speaker Identification
 
-This repository contains data and code for the project of speaker identification. End-to-end speaker identification is done in two stages:
+This repository contains data and code for our Interspeech 2024 paper [Identifying Speakers in Dialogue Transcripts: A Text-based Approach Using Pretrained Language Models](https://arxiv.org/abs/2407.12094). 
+
+End-to-end speaker identification is done in two stages:
 - Person name recognition: given a meeting transcript, find spans for person names for each sentence in the transcript.
 - Speaker identification: given a meeting transcript and person names, find names for speaker IDs.
 
@@ -56,6 +58,20 @@ In this command:
     - [REQUIRED] `--model_type [joint|individual]` specifies what type of models that we use for training. `joint` means the Joint Model while `individual` means the Individual Model.
 
 Trained models can be found at: [Google Drive link](https://drive.google.com/file/d/1qHtFnjENHR6cOZJX1-wDzvLOTIM580dY/view?usp=sharing) ([mirror](https://archive.org/download/speaker-identification)).
+
+## Citation
+
+If you use this work in your research, please cite our paper [Identifying Speakers in Dialogue Transcripts: A Text-based Approach Using Pretrained Language Models](https://arxiv.org/abs/2407.12094) as follows:
+
+```
+@inproceedings{nguyen2024identifyingspeakersdialoguetranscripts,
+      title={Identifying Speakers in Dialogue Transcripts: A Text-based Approach Using Pretrained Language Models}, 
+      author={Minh Nguyen and Franck Dernoncourt and Seunghyun Yoon and Hanieh Deilamsalehy and Hao Tan and Ryan Rossi and Quan Hung Tran and Trung Bui and Thien Huu Nguyen},
+      year={2024},
+      booktitle={Interspeech 2024}, 
+}
+```
+
 
 ## License
 
